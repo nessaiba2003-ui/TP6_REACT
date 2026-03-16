@@ -1,70 +1,46 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# TP 6 : Découverte des Hooks Avancés et Personnalisés
 
-## Available Scripts
+Ce projet a été réalisé dans le cadre du cours de **Développement Front-End moderne avec React**. L'objectif est de maîtriser les Hooks avancés (`useRef`, `useReducer`, `useEffect`) et de créer ses propres Hooks personnalisés.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🚀 Fonctionnalités par Étapes
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 1. Gestion du Focus et des Rendu (`useRef`)
+ Utilisation de `useRef` pour donner automatiquement le focus à un champ de saisie au chargement.
+ Utilisation de `useRef` pour compter et afficher le nombre de fois qu'un composant a été rendu sans déclencher de nouveaux rendus.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 2. Hooks Personnalisés et Appels API
+ Création d'un Hook personnalisé `useFetch` pour récupérer des données depuis une API (ex: JSONPlaceholder) et affichage d'une liste d'articles.
+ Création de `useLocalStorage` pour sauvegarder des données (comme un nom d'utilisateur) directement dans le navigateur.
 
-### `npm test`
+### 3. Gestion d'État Complexe (`useReducer`)
+*   **Compteur** : Mise en place d'un compteur utilisant `useReducer` pour gérer les actions d'incrémentation, décrémentation et la **remise à zéro**.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 4. Cycle de Vie et Nettoyage (`useEffect`)
+ Création d'un **Timer** et d'une **Horloge** temps réel avec gestion du nettoyage  pour éviter les fuites de mémoire.
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 📂 Structure du Projet
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<img width="266" height="779" alt="image" src="https://github.com/user-attachments/assets/57339a90-db1d-4dbb-9ee4-056a218a8ceb" />
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+### 📝 Concepts Appris
+Différence entre useState et useRef.
+Séparation de la logique métier avec les Hooks personnalisés.
+Gestion du nettoyage des effets pour la performance.
+Utilisation de useReducer pour les états complexes.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<img width="898" height="652" alt="Screenshot 2026-03-16 160207" src="https://github.com/user-attachments/assets/4682be27-4b9b-469d-a4aa-422b643ccda5" />
+<img width="1919" height="505" alt="Screenshot 2026-03-16 161224" src="https://github.com/user-attachments/assets/f5569aae-7787-400d-b912-b81ca97fc368" />
+<img width="1882" height="581" alt="Screenshot 2026-03-16 161252" src="https://github.com/user-attachments/assets/d0c2929c-651f-44b4-8637-566a0f74dde2" />
+<img width="1919" height="694" alt="Screenshot 2026-03-16 161654" src="https://github.com/user-attachments/assets/65afd141-5ec7-450e-94da-b02c1c4bb9e5" />
+<img width="1919" height="845" alt="Screenshot 2026-03-16 161718" src="https://github.com/user-attachments/assets/40ada7f5-1901-4d11-ba0d-c6535189605e" />
+<img width="1907" height="914" alt="Screenshot 2026-03-16 161729" src="https://github.com/user-attachments/assets/7012de84-5976-416f-afbe-e89b52774e85" />
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
